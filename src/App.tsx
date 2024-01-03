@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
-import Gallery from './components/Gallery';
-import SearchBar from './components/SearchBar';
+import Gallery from './components/Gallery.tsx';
+import SearchBar from './components/SearchBar.tsx';
 function App() {
   let [message, setMessage] = useState('Seach for music')
   let [search, setSearch] = useState('')
@@ -21,7 +21,7 @@ function App() {
     fetchData()
     }
   }, [search])
-  const handleSearch = (e, term) => {
+  const handleSearch = (e: any, term: string) => {
     e.preventDefault();
     setSearch(term)
   }

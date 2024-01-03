@@ -1,8 +1,8 @@
 import React from 'react'
-import GalleryItem from './GalleryItem'
+import GalleryItem from './GalleryItem.tsx'
 
-function Gallery(props) {
-    const display = props.data.map((item, i)=> {
+function Gallery(props: any) {
+    const display = props.data.map((item: any , i: any)=> {
         return (
             <GalleryItem item={item} key={i}/>
         )
