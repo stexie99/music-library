@@ -31,6 +31,7 @@ const wrapPromise = (promise) =>{
 }
 
 export const createResource = (searchTerm) => {
+    console.log(searchTerm)
     return {
         result: wrapPromise(fetchSearch(searchTerm))
     }
